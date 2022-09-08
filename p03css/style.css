@@ -1,0 +1,37 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+table, td, th {
+    border: 1px solid;
+}
+
+th {
+    background-color: aqua;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+table, th {
+    width: 30%;
+    border-collapse: collapse;
+}
+
+td:hover {
+    transform: scale(1.5);
+    opacity: 100%;
+    /*box-shadow: 1px 1px 6px yellow;*/
+}
+
+.button {
+    text-align: center;
+}
+
+.back-button {
+    padding-top: 10px;
+    text-align: center;
+}
