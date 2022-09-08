@@ -1,0 +1,22 @@
+table, td, th {
+    border: 1px solid;
+}
+
+th {
+    background-color: lightgray;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+table, th {
+    width: 30%;
+    border-collapse: collapse;
+}
+
+.button {
+    padding-top: 10px;
+    text-align: center;
+}
