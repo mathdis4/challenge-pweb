@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Delete</title>
+    <link rel="stylesheet" href="style-tabel-p5.css">
+</head>
+<body>
+    <h1 align="center">Daftar Teman</h1>
+    
+    <table class="tabel-teman-list" align="center">
+        <tr class="judul-tabel">
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Aksi</th>
+        </tr>
+        <tr class="baris" id="baris__1">
+            <td class="info" id="nama__1">Aa Dimaz</td>
+            <td class="info" id="alamat__1">Majalengka</td>
+            <td class="info" id="aksi__1">Hapus</td>
+        </tr>
+        <tr class="baris" id="baris__2">
+            <td class="info" id="nama__2">Ara S</td>
+            <td class="info" id="alamat__2">Majalengka</td>
+            <td class="info" id="aksi__2">Hapus</td>
+        </tr>
+        <tr class="baris" id="baris__3">
+            <td class="info" id="nama__3">Sheva A</td>
+            <td class="info" id="alamat__3">Majalengka</td>
+            <td class="info" id="aksi__3">Hapus</td>
+        </tr>
+        <tr class="baris" id="baris__4">
+            <td class="info" id="nama__4">Apriliana J. M</td>
+            <td class="info" id="alamat__4">Majalengka</td>
+            <td class="info" id="aksi__4">Hapus</td>
+        </tr>
+        <tr class="baris" id="baris__5">
+            <td class="info" id="nama__5">Ari S</td>
+            <td class="info" id="alamat__5">Majalengka</td>
+            <td class="info" id="aksi__5">Hapus</td>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.info').click(function(){
+                let isi = $(this).text();
+                let tid = $(this).prop('id');
+                let rid = tid.split('__');
+                let id_baris = rid[1];
+                let nama_tmn = $('#nama__'+id_baris).text();
+    
+                if(isi=='Hapus'){
+                    let konfir = confirm('Apakah anda yakin ingin menghapus data ${nama_tmn} ??');
+                    if(!konfir) return;
+    
+                    $('#baris__'+id_baris).fadeOut();
+                }else{
+                    alert('Aksi lain untuk cell ini belum tersedia. Terima kasih sudah mencoba! :)')
+                }
+            })
+        })
+    </script>
+</body>
+</html>
