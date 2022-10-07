@@ -1,0 +1,14 @@
+body {
+    padding: 100px;
+    width: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.petunjuk-ngisi{
+    color: red;
+}
+
+.ttd{
+    float: right;
+    text-align: left;
+}
