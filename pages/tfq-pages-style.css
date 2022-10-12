@@ -1,0 +1,60 @@
+body {
+    background-image: url("bg.jpg");
+}
+
+.nav-bar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(141, 122, 98);
+}
+
+.ket-post{
+    float: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 17px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ket-post:hover{
+    background: beige;
+    color: black;
+}
+
+
+img {
+    width: 30%;
+    border-radius: 50%;
+    padding: 300px;
+    transition: 0.2s;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+    opacity: 100%;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bio {
+    font-size: 300px;
+    background-color: red;
+  }
+
+  #hello {
+    color: white;
+    text-align: center;
+    background-color: black;
+  }
