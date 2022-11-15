@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel-slide").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel-slide, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #25cb47;
+  border: solid 1px #c3c3c3;
+}
+
+#panel-slide {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Challenge Efek Slide Down</div>
+<div id="panel-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, orci sed malesuada congue, quam dolor aliquet mi, sed placerat orci tellus sit amet augue. Aenean mattis tristique libero, et porta orci bibendum non. Cras auctor lectus ut ipsum aliquet, vitae venenatis lectus pretium. Quisque lobortis ornare magna. Aliquam vestibulum fringilla efficitur. Integer luctus efficitur ipsum, ac posuere quam elementum ut. Praesent pulvinar porttitor nisi sed scelerisque. Curabitur laoreet suscipit arcu, a condimentum felis gravida sit amet. Quisque lorem nisi, auctor laoreet sagittis non, tristique ut elit. </div>
+
+</body>
+</html>
+
